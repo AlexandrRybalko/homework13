@@ -133,7 +133,7 @@ namespace OOPExamples
 
         public static List<Bank> GenerateBanks()
         {
-            var banksCount = 2;//random.Next(BANKS_MIN, BANKS_MAX);
+            var banksCount = random.Next(BANKS_MIN, BANKS_MAX);
             var result = new List<Bank>();
 
             for (int i = 0; i < banksCount; i++)
@@ -155,7 +155,7 @@ namespace OOPExamples
             int bankId = 0;
             Bank bank = null;
             List<Transaction> transactions = null;
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 100; i++)
             {
                 bankId = random.Next(0, banks.Count);
                 bank = banks[bankId];
